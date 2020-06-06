@@ -1,4 +1,4 @@
-**alpha**
+**Version: 1.0.0-alpha**
 
 # Table of Contents
 
