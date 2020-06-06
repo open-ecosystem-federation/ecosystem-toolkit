@@ -132,7 +132,7 @@ A collaboration agreement therefore provides a common artefact which can be refe
 
 **_Figure 1: Collaboration Agreement_**
 
-![Collaboration Agreement](https://github.com/open-ecosystem-federation/federated-events-attributes-reasoning-alpha/blob/master/Collaboration%20Agreement.png)
+![Collaboration Agreement](/assets/img/collaboration-agreement.png)
 _[Source: Pinsent Masons]_
 
 As the name suggests, collaboration agreements are likely to be best suited to ecosystems where the participants are actively looking to collaborate with one another to streamline the mechanisms through which agreement can be reached to share information.
@@ -223,7 +223,7 @@ The OEF Participants use their respective implementations of the OEF Technical S
 
 **_Figure 2: Bilateral Contracts between Event Providers and Event Consumers_**
 
-![Bilateral Contract](https://github.com/open-ecosystem-federation/federated-events-attributes-reasoning-alpha/blob/master/Bilateral%20Contract.png)
+![Bilateral Contract](/assets/img/bilateral-contract.png)
 _[Source: Pinsent Masons]_
 
 Contractual arrangements like this may be best suited to competitive ecosystems (e.g. markets) where different Event Providers compete to offer a range of data services. In such an environment, there may be competitive advantage in using a single contract that covers multiple data services and uses (e.g. a master service agreement).
@@ -236,7 +236,7 @@ Schemes are often used to mutualise the costs and risks inherent in sharing info
 
 **_Figure 3: Scheme_**
 
-![Scheme](https://github.com/open-ecosystem-federation/federated-events-attributes-reasoning-alpha/blob/master/Scheme.png)
+![Scheme](/assets/img/scheme.png)
 _[Source: Pinsent Masons]_
 
 Schemes provide the governance framework for many ecosystems already operating today, and the key properties of a scheme are desirable in many contexts. However, schemes can also have properties that make them undesirable in other contexts:
