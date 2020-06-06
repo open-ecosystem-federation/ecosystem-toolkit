@@ -1,4 +1,4 @@
-**under construction - pre-alpha**
+**alpha**
 
 # Table of Contents
 
@@ -8,21 +8,21 @@
   * [2.2 Default Configuration of Permissions / Entitlements](rules-of-engagement#22-default-configuration-of-permissions--entitlements)
   * [2.3 Default Governance Framework](rules-of-engagement#23-default-governance-framework)
 * [3 OEF Ecosystem Governance](rules-of-engagement#3-oef-ecosystem-governance)
-  * [3.1 Legal Instrumentation](Draft-RoE#31-legal-instrumentation)
-  * [3.2 Components](Draft-RoE#32-components)
-    * [3.2.1 Legal Basis](Draft-RoE#321-legal-basis)
-    * [3.2.2 Liability Framework](Draft-RoE#322-liability-framework)
-    * [3.2.3 Assurance Framework](Draft-RoE#323-assurance-framework)
-    * [3.2.4 Issue Resolution](Draft-RoE#324-issue-resolution)
-    * [3.2.5 Terms of Service](Draft-RoE#325-terms-of-service)
-    * [3.2.6 Scope of Service](Draft-RoE#326-scope-of-service)
-    * [3.2.7 Ecosystem Intent](Draft-RoE#327-ecosystem-intent)
-    * [3.2.8 Membership Administration](Draft-RoE#328-membership-administration)
-    * [3.2.9 Value Exchange Framework](Draft-RoE#329-value-exchange-framework)
-    * [3.2.10 Settlement Framework](Draft-RoE#3210-settlement-framework)
-* [Appendix](Draft-RoE#Appendix)
-  * [Bilateral Contract](Draft-RoE#bilateral-contract)
-  * [Scheme](Draft-RoE#scheme)
+  * [3.1 Legal Instrumentation](rules-of-engagement#31-legal-instrumentation)
+  * [3.2 Components](rules-of-engagement#32-components)
+    * [3.2.1 Legal Basis](rules-of-engagement#321-legal-basis)
+    * [3.2.2 Liability Framework](rules-of-engagement#322-liability-framework)
+    * [3.2.3 Assurance Framework](rules-of-engagement#323-assurance-framework)
+    * [3.2.4 Issue Resolution](rules-of-engagement#324-issue-resolution)
+    * [3.2.5 Terms of Service](rules-of-engagement#325-terms-of-service)
+    * [3.2.6 Scope of Service](rules-of-engagement#326-scope-of-service)
+    * [3.2.7 Ecosystem Intent](rules-of-engagement#327-ecosystem-intent)
+    * [3.2.8 Membership Administration](rules-of-engagement#328-membership-administration)
+    * [3.2.9 Value Exchange Framework](rules-of-engagement#329-value-exchange-framework)
+    * [3.2.10 Settlement Framework](rules-of-engagement#3210-settlement-framework)
+* [Appendix](rules-of-engagement#Appendix)
+  * [Bilateral Contract](rules-of-engagement#bilateral-contract)
+  * [Scheme](rules-of-engagement#scheme)
 
 # 1 Introduction
 
@@ -50,14 +50,14 @@ Any OEF Participant **may** initiate an OEF Ecosystem. Potential OEF Participant
 By definition, a given OEF Ecosystem excludes all OEF Participants which either choose not to opt in or are not invited to join. The rationale for exclusion can be opaque: they may be unable to meet the incremental requirements set out in the OEF Ecosystem's governance framework, be unaware of its existence, be unwilling to join it or are simply not invited.
 
 Whenever OEF Participants share information, they **must** record the governance framework under which the transaction is occurring (although it is important to note that this record might not be something that is replayed with every transaction - for example, an OEF Participant may specify that it is universally acting under a given governance framework for a given period of time):
-* When information is being shared under the OEF Rules of Engagement, a set of [minimum requirements](Draft-RoE#minimum-requirements) is assumed to apply.
+* When information is being shared under the OEF Rules of Engagement, a set of [minimum requirements](rules-of-engagement#minimum-requirements) is assumed to apply.
 * When information is being shared under a governance framework that goes beyond the OEF Rules of Engagement, OEF Participants must reference artefacts which collectively comprise that OEF Ecosystem Governance.
 
 Whenever OEF Participants form an OEF Ecosystem that references a governance framework that goes beyond the OEF Rules of Engagement, they **must** take responsibility for monitoring and enforcing compliance with that governance framework (e.g. through systems for issue identification, escalation, resolution, remediation, etc.).
 
 It is OEF **best practice** for 'open' OEF Ecosystems (e.g. market places, extended supply chains) to make the reference to such artefacts public to all other OEF Participants.
 
-'Open' OEF Ecosystems **must** configure such artefacts in terms of standardised models, [component parts](Draft-RoE#32-components) and easily accessible, repeatable patterns.  These component parts must separate concerns and break granularity down to the level necessary to provision for 'policy as code'.  Simply put, everything which can be separated out and configured/considered independently **must** be separated out and defined either as data or code in an implementation of the Technical Specification.
+'Open' OEF Ecosystems **must** configure such artefacts in terms of standardised models, [component parts](rules-of-engagement#32-components) and easily accessible, repeatable patterns.  These component parts must separate concerns and break granularity down to the level necessary to provision for 'policy as code'.  Simply put, everything which can be separated out and configured/considered independently **must** be separated out and defined either as data or code in an implementation of the Technical Specification.
 
 These OEF **best practices** are designed to lower barriers to entry into a given OEF Ecosystem. However, the OEF Toolkit does not preclude or prejudice against 'closed' OEF Ecosystems (e.g. collaborations based on statutory or regulatory requirements). There is no OEF requirement to make the reference governance artefacts public to other OEF Participants beyond those already party to the OEF Ecosystem, or to use any particular form of governance.
 
@@ -102,7 +102,7 @@ Collectively and exhaustively, these components comprise the default governance 
 
 By design, the OEF Rules of Engagement aim to set out a minimal basis under which information is exchanged. It is therefore desirable for OEF Ecosystems to collaborate on the basis of governance frameworks that are tailored to their specific context. These frameworks are referred to as OEF Ecosystem Governance.
 
-When information is being shared under a governance framework that goes _beyond_ the OEF Rules of Engagement, OEF Participants **must** reference legal instrumentation which collectively comprise that OEF Ecosystem Governance and establishes the legal basis under which the transaction is occurring (see [Sections 3.1](Draft-RoE#31-legal-instrumentation) and [Section 3.2.1](Draft-RoE#321-legal-basis) below).
+When information is being shared under a governance framework that goes _beyond_ the OEF Rules of Engagement, OEF Participants **must** reference legal instrumentation which collectively comprise that OEF Ecosystem Governance and establishes the legal basis under which the transaction is occurring (see [Sections 3.1](rules-of-engagement#31-legal-instrumentation) and [Section 3.2.1](rules-of-engagement#321-legal-basis) below).
 
 The OEF Rules of Engagement enforces a default legal basis of consent, but does not seek to define the governance frameworks that are appropriate for any given OEF Ecosystem. Rather, its goal is help to associate the governance framework under which information is shared with the information itself, as a way of supporting the collaboration between the OEF Participants that comprise the OEF Ecosystem.
 
@@ -118,17 +118,17 @@ There are a number of legal bases on which governance frameworks can be construc
 
 It is expected that the majority of OEF Ecosystems that rely on a legal basis that goes beyond the default of consent set out in the OEF Rules of Engagement will do so under contract. The precise nature of the contract used to articulate a given OEF Ecosystem Governance model may vary. For example, it is easy to identify at least three such variants:
 
-* [Bilateral contract](Draft-RoE#bilateral-contract)
-* Multilateral [collaboration agreement](Draft-RoE#collaboration-agreement)
-* Bilateral contracts with a legal entity tasked with operating a [scheme](Draft-RoE#scheme)
+* [Bilateral contract](rules-of-engagement#bilateral-contract)
+* Multilateral [collaboration agreement](rules-of-engagement#collaboration-agreement)
+* Bilateral contracts with a legal entity tasked with operating a [scheme](rules-of-engagement#scheme)
 
-Given the expected use of a contract in the form of a collaboration agreement to suppport the Beta phase, we use this section to focus on this particular variant of legal instrumentation. The [Appendix](Draft-RoE#appendix) elaborates further on contracts organised bilaterally or as a scheme.
+Given the expected use of a contract in the form of a collaboration agreement to suppport the Beta phase, we use this section to focus on this particular variant of legal instrumentation. The [Appendix](rules-of-engagement#appendix) elaborates further on contracts organised bilaterally or as a scheme.
 
 A collaboration agreement is a contract that covers multiple data services and uses, using template annexes to reflect any incremental dimension of governance that is specific to a particular data service and/or use.
 
 The collaboration agreement governs the information exchange between _several_ OEF Participants acting as Event Providers and _several_ OEF Participants acting as Event Consumers, all of whom choose to submit to the terms which it contains.
 
-A collaboration agreement therefore provides a common artefact which can be referenced by all the OEF Participants - in other words, unlike a master service agreement, it is a multilateral agreement. The collaboration agreement may include the constitution of administrative roles and mechanisms to support the evolution of the agreement itself over time ([see Section 3.2.7](Draft-RoE#327-membership-administration)).
+A collaboration agreement therefore provides a common artefact which can be referenced by all the OEF Participants - in other words, unlike a master service agreement, it is a multilateral agreement. The collaboration agreement may include the constitution of administrative roles and mechanisms to support the evolution of the agreement itself over time ([see Section 3.2.7](rules-of-engagement#327-membership-administration)).
 
 **_Figure 1: Collaboration Agreement_**
 
