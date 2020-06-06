@@ -1,6 +1,8 @@
+# Rules of Engagement
+
 **Version: 1.0.0-alpha**
 
-# Table of Contents
+## Table of Contents
 
 * [1 Introduction](rules-of-engagement#1-introduction)
 * [2 OEF Rules of Engagement](rules-of-engagement#2-oef-rules-of-engagement)
@@ -24,7 +26,7 @@
   * [Bilateral Contract](rules-of-engagement#bilateral-contract)
   * [Scheme](rules-of-engagement#scheme)
 
-# 1 Introduction
+## 1 Introduction
 
 The primary objective of the Open Ecosystem Federation (OEF) is to allow separate entities to agree and execute a scalable and extensible model for collaboration through the sharing of information.
 
@@ -35,9 +37,9 @@ The OEF aims to deliver an open and repeatable Toolkit comprising of two parts:
 
 This document both defines the OEF Rules of Engagement and sets out how OEF Participants can use the OEF Technical Specification to reference governance frameworks that go beyond the OEF Rules of Engagement. In this way, each OEF Ecosystem can combine the OEF Technical Specification with their own governance framework.
 
-# 2 OEF Rules of Engagement
+## 2 OEF Rules of Engagement
 
-## 2.1 Principles
+### 2.1 Principles
 
 Both the OEF Technical Specification and OEF Rules of Engagement **must** be considered a minimum set of requirements. Entities that comply with this minimum set of requirements are referred to as OEF Participants.
 
@@ -61,7 +63,7 @@ It is OEF **best practice** for 'open' OEF Ecosystems (e.g. market places, exten
 
 These OEF **best practices** are designed to lower barriers to entry into a given OEF Ecosystem. However, the OEF Toolkit does not preclude or prejudice against 'closed' OEF Ecosystems (e.g. collaborations based on statutory or regulatory requirements). There is no OEF requirement to make the reference governance artefacts public to other OEF Participants beyond those already party to the OEF Ecosystem, or to use any particular form of governance.
 
-## 2.2 Default Configuration of Permissions / Entitlements
+### 2.2 Default Configuration of Permissions / Entitlements
 
 The default configuration of the OEF Technical Specification is to permit / entitle OEF Participants to _write_ Events, but not to _read_ events. It is assumed that this default configuration complies with the vast majority of laws and regulations (i.e. everyone is entitled to write down what they think, if those thoughts remain inaccessible to everyone) and would be considered to constitute security best practice.
 
@@ -80,7 +82,7 @@ The legal and regulatory context in which each OEF Participant operates will be 
 
 The OEF Technical Specification only provides a toolkit which enables permissions / entitlements for each individual Event to be configured in an easily _extensible_ way, and to be executed in a highly _scalable_ and _machine-readable_ environment.
 
-## 2.3 Default Governance Framework
+### 2.3 Default Governance Framework
 
 Whenever OEF Participants share information under the OEF Rules of Engagement, a default governance framework **must** always apply:
 
@@ -98,7 +100,7 @@ Whenever OEF Participants share information under the OEF Rules of Engagement, a
 
 Collectively and exhaustively, these components comprise the default governance framework that constitutes the OEF Rules of Engagement. This is the default artefact that is referenced by the OEF Technical Specification.
 
-# 3 OEF Ecosystem Governance
+## 3 OEF Ecosystem Governance
 
 By design, the OEF Rules of Engagement aim to set out a minimal basis under which information is exchanged. It is therefore desirable for OEF Ecosystems to collaborate on the basis of governance frameworks that are tailored to their specific context. These frameworks are referred to as OEF Ecosystem Governance.
 
@@ -112,7 +114,7 @@ In this section, we consider two aspects of a given governance framework: firstl
 
 We recognise that neither constitutes a comprehensive or definitive set, and can only act as an initial hypothesis for the "composability" of OEF Ecosystem Governance. The intention is to test this hypothesis in a Beta phase, by using the OEF Technical Specification to reference a legally enforceable governance framework that uses a collaboration agreement based on the default setting contained in the OEF Rules of Engagement and extending across the components set out below.
 
-## 3.1 Legal Instrumentation
+### 3.1 Legal Instrumentation
 
 There are a number of legal bases on which governance frameworks can be constructed. Taking the EU's General Data Protection Regulation (GDPR) as an example, there are six lawful bases for processing personal data: consent, contract, legal obligation, vital interests, public task and legitimate interests.
 
@@ -143,11 +145,11 @@ It is OEF best practice to reference an open and standard artefact as the legal 
 
 It is still possible for Event Providers to compete to provide data services to Event Consumers under the terms of a collaboration agreement. However, they have agreed to do so under a common governance framework.  
 
-## 3.2 Components
+### 3.2 Components
 
 This section elaborates a non-exhaustive list of the different dimensions that OEF Ecosystems might use to compose the governance framework under which they have mutually agreed to collaborate. These dimensions might be captured in a form of legal instrumentation (such as the examples in the section above), which in turn can then be referenced as the basis for information sharing via implementations of the OEF Technical Specification.
 
-### 3.2.1 Legal Basis
+#### 3.2.1 Legal Basis
 
 OEF Ecosystems **may** share information on a legal basis that is different from the legal basis of "consent" that is the default under the OEF Rules of Engagement.
 
@@ -155,41 +157,41 @@ Taking the EU's General Data Protection Regulation (GDPR) as an example, there a
 
 When personal data is involved, the GDPR imposes a high duty of care upon data controllers in selecting their data processing service providers. This duty of care may be reflected in specific clauses within the legal instrumentation used to set out OEF Ecosystem Governance.
 
-### 3.2.2 Liability Framework
+#### 3.2.2 Liability Framework
 
 OEF Ecosystems **may** choose to accept a level of liability linked to the quality of the information being shared that is greater than the level of zero that is the default under the OEF Rules of Engagement.
 
 OEF Ecosystem Governance that includes a liability framework (linked to data quality standards and assurance levels) gives those OEF Participants a basis for recourse if they rely on the information being shared.
 
-### 3.2.3 Assurance Framework
+#### 3.2.3 Assurance Framework
 
 OEF Ecosystems **may** choose to specify a level of assurance over the quality of information on specific events that is greater than the level of zero that is the default under the OEF Rules of Engagement.
 
 The OEF Technical Specification enforces a level of assurance as to the _lineage_ or _provenance_ of information. However, it does not impose or generate any level of assurance about the _quality_ of the information being shared - it may range from well formed but nonsensical to highly refined insight.  Assurance framework specifics will depend on the context of the types of information exchange present in an ecosystem and the domains and subdomains over which the participants are intersecting.
 
-### 3.2.4 Issue Resolution
+#### 3.2.4 Issue Resolution
 
 Issue resolution mechanisms are closely linked to liability and assurance frameworks. These **may** involve mutually agreed procedures to identify, remediate and resolve issues, as well as sanctions for ecosystem members that fail to observe them (e.g. expulsion from the ecosystem).
 
-### 3.2.5 Terms of Service
+#### 3.2.5 Terms of Service
 
 OEF Participants **may** use an implementation of the OEF technical specification to reference terms of service that cannot (yet) be expressed within the ontology. These might include service levels, feedback loops, revocation rights, etc.
 
 For example, OEF Ecosystems **may** choose to specify a service model that is designed to encourage members to behave as good ecosystem "citizens" and to minimise the need for escalation of issues by alerting Event Providers to issues with their data service on the basis that the Event Provider will use the feedback to address the issues - and improve data services - in a timely manner.
 
-### 3.2.6 Scope of Service
+#### 3.2.6 Scope of Service
 
 The default scope of service within the OEF Technical Specification is the provision of access to write information in the form of Events. The OEF Technical Specification defines the service via its core administration responsibilities and ontology.
 
 OEF Participants **may** expand the administrative responsibilities and ontology to express key features of this service (such as time-to-live, access expiry, etc.) and to express an expansion of the scope of service (such as mirroring, notifications, etc.).
 
-### 3.2.7 Ecosystem Intent
+#### 3.2.7 Ecosystem Intent
 
 OEF Participants **may** use an implementation of the OEF Technical Specification to reference a mechanism that defines the intent of a given OEF Ecosystem, beyond the immediate transaction involved in sharing information.
 
 For example, intent may be used to capture what is expected of the members of the OEF Ecosystem, what good reciprocation looks like, how common interests are protected, etc.
 
-### 3.2.8 Membership Administration
+#### 3.2.8 Membership Administration
 
 An OEF Ecosystem **may** use an implementation of the OEF Technical Specification to reference artefacts used to administer its membership. Such artefacts might include (but are not limited to):  
 
@@ -197,7 +199,7 @@ An OEF Ecosystem **may** use an implementation of the OEF Technical Specificatio
 * The _policies_ used to determine membership. For example, an OEF Ecosystem comprises of members of a given club: to become a member of the club, parties must be recommended by at least one other member.
 * The _mechanisms_ or _tools_ used to assign or revoke the attributes or characteristics required to participate in an OEF Ecosystem. For example, the process for administering membership is handled using Github and Github accounts.  
 
-### 3.2.9 Value Exchange Framework
+#### 3.2.9 Value Exchange Framework
 
 The default motivation for sharing information is altruism. The default value placed on the information being shared is therefore zero.
 
@@ -205,7 +207,7 @@ OEF Participants **may** use an implementation of the OEF technical specificatio
 
 Access to the information within that OEF Ecosystem will then be contingent on settlement to that value. OEF best practice is to reference open and standard values (such as currency-based prices) to minimise barriers to entry.
 
-### 3.2.10 Settlement Framework
+#### 3.2.10 Settlement Framework
 
 The default reward for those sharing information or expertise within OEF ecosystems is "psychic reward" therefore unless configured otherwise via a Collaboration Agreement there is no value settlement framework in place.
 
@@ -213,9 +215,9 @@ OEF Participants **may** use an implementation of the OEF technical specificatio
 
 OEF best practice is to reference open and standard settlement frameworks (such as currency-based payment schemes) to minimise barriers to entry.
 
-# Appendix
+## Appendix
 
-## Bilateral Contract
+### Bilateral Contract
 
 The second example of legal instrumentation is that of a bilateral contract between an OEF Participant acting in the role of Event Provider and another OEF Participant acting in the role of Event Consumer. The contract specifies the terms under which the Event Provider makes a given data service available to the Event Consumer for a given purpose or use.
 
@@ -228,7 +230,7 @@ _[Source: Pinsent Masons]_
 
 Contractual arrangements like this may be best suited to competitive ecosystems (e.g. markets) where different Event Providers compete to offer a range of data services. In such an environment, there may be competitive advantage in using a single contract that covers multiple data services and uses (e.g. a master service agreement).
 
-## Scheme
+### Scheme
 
 The third example of legal instrumentation is that of a scheme. Each OEF Participant that opts to join an OEF Ecosystem governed by a scheme signs a bilateral contract with the legal entity that is tasked with operating that scheme.
 
