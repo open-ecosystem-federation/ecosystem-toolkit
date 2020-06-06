@@ -30,7 +30,7 @@ The primary objective of the Open Ecosystem Federation (OEF) is to allow separat
 
 The OEF aims to deliver an open and repeatable Toolkit comprising of two parts:
 
-* A [Technical Specification](https://github.com/open-ecosystem-federation/federated-events-attributes-reasoning-alpha/wiki/Draft-Specification) that is based on open standards and provides functionality to enable the _execution_ of scalable and extensible collaboration
+* A Technical Specification (TODO: link provided soon) that is based on open standards and provides functionality to enable the _execution_ of scalable and extensible collaboration
 * A default governance framework we are calling the **Rules of Engagement** that facilitates the _agreement_ required for scalable and extensible collaboration
 
 This document both defines the OEF Rules of Engagement and sets out how OEF Participants can use the OEF Technical Specification to reference governance frameworks that go beyond the OEF Rules of Engagement. In this way, each OEF Ecosystem can combine the OEF Technical Specification with their own governance framework.
