@@ -2,12 +2,12 @@
 
 # Table of Contents
 
-* [1 Introduction](Draft-RoE#1-introduction)
-* [2 OEF Rules of Engagement](Draft-RoE#2-oef-rules-of-engagement)
-  * [2.1 Principles](Draft-RoE#21-principles)
-  * [2.2 Default Configuration of Permissions / Entitlements](Draft-RoE#22-default-configuration-of-permissions--entitlements)
-  * [2.3 Default Governance Framework](Draft-RoE#23-default-governance-framework)
-* [3 OEF Ecosystem Governance](Draft-RoE#3-oef-ecosystem-governance)
+* [1 Introduction](rules-of-engagement#1-introduction)
+* [2 OEF Rules of Engagement](rules-of-engagement#2-oef-rules-of-engagement)
+  * [2.1 Principles](rules-of-engagement#21-principles)
+  * [2.2 Default Configuration of Permissions / Entitlements](rules-of-engagement#22-default-configuration-of-permissions--entitlements)
+  * [2.3 Default Governance Framework](rules-of-engagement#23-default-governance-framework)
+* [3 OEF Ecosystem Governance](rules-of-engagement#3-oef-ecosystem-governance)
   * [3.1 Legal Instrumentation](Draft-RoE#31-legal-instrumentation)
   * [3.2 Components](Draft-RoE#32-components)
     * [3.2.1 Legal Basis](Draft-RoE#321-legal-basis)
