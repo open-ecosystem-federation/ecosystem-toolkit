@@ -132,7 +132,7 @@ A collaboration agreement therefore provides a common artefact which can be refe
 
 **_Figure 1: Collaboration Agreement_**
 
-![Collaboration Agreement](/assets/img/collaboration-agreement.png)
+![Collaboration Agreement](../assets/img/collaboration-agreement.png)
 _[Source: Pinsent Masons]_
 
 As the name suggests, collaboration agreements are likely to be best suited to ecosystems where the participants are actively looking to collaborate with one another to streamline the mechanisms through which agreement can be reached to share information.
