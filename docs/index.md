@@ -2,7 +2,7 @@
 
 OEF will deliver an open, scalable, extensible and repeatable Ecosystem Toolkit comprising two parts:
 
-* [pre Alpha - **not** open for review] A technical specification based on open standards
+* A technical specification based on open standards (coming soon)
 * [Rules of Engagement](rules-of-engagement.md) A default governance framework
 
 Parties use their implementation of the OEF technical specification to declare both the signals that they control and the basis on which they will share them with other OEF compliant implementations.
