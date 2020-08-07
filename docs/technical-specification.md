@@ -10,36 +10,36 @@
   * [1.3 Structure of this document](technical-specification#13-structure-of-this-document)
 * [2. An Expert System](technical-specification#2-an-expert-system)
   * [2.1 Summary of required responsibilities](technical-specification#21-summary-of-required-responsibilities)
-  * [2.2 Interoperability between Expert Systems](technical-specification-#22-interoperability-between-expert-systems)
-* [3. Architecture Constraints](technical-specification-#3-architecture-constraints)
-  * [3.1 Information must be conveyed using immutable assertions](technical-specification-#31-information-must-be-conveyed-using-immutable-assertions)
-  * [3.2 Event information exchange must be ecosystem topology agnostic](technical-specification-#32-event-information-exchange-must-be-ecosystem-topology-agnostic)
-  * [3.3 Expert systems and ecosystems must be observable at run time](technical-specification-#33-expert-systems-and-ecosystems-must-be-observable-at-run-time)
-  * [3.4 API First](technical-specification-#34-api-first)
-  * [3.5 Resource representations and content negotiation must be supported](technical-specification-#35-resource-representations-and-content-negotiation-must-be-supported)
-  * [3.6 Entitlements and affordances must be discoverable](technical-specification-#36-entitlements-and-affordances-must-be-discoverable)
-  * [3.7 Functional evolution of protocols and resource representations must be unsurprising](technical-specification-#37-functional-evolution-of-protocols-and-resource-representations-must-be-unsurprising)
-  * [3.8 External Feed integration must be technology agnostic](technical-specification-#38-external-feed-integration-must-be-technology-agnostic)
-* [4 Required responsibilities](technical-specification-#4-required-responsibilities)
-  * [4.1 Exchange](technical-specification-#41-exchange)
-  * [4.2 Administration](technical-specification-#42-administration)
-  * [4.3 Refinery](technical-specification-#43-refinery)
-  * [4.4 Event Store](technical-specification-#44-event-store)
-  * [4.5 Registry](technical-specification-#45-registry)
-  * [4.6 Ontology](technical-specification-#46-ontology)
-* [5 Architecture Recommendations](technical-specification-#5-architecture-recommendations)
-* [6. Potential extensions](technical-specification-#6-potential-extensions)
-  * [6.1 Directory](technical-specification-#61-directory)
-  * [6.2 Reasoning Engines](technical-specification-#62-reasoning-engines)
-* [7. Separate Concerns](technical-specification-#7-separate-concerns)
-* [8. External API](technical-specification-#8-external-api)
-* [9. References](technical-specification-#9-references)
+  * [2.2 Interoperability between Expert Systems](technical-specification#22-interoperability-between-expert-systems)
+* [3. Architecture Constraints](technical-specification#3-architecture-constraints)
+  * [3.1 Information must be conveyed using immutable assertions](technical-specification#31-information-must-be-conveyed-using-immutable-assertions)
+  * [3.2 Event information exchange must be ecosystem topology agnostic](technical-specification#32-event-information-exchange-must-be-ecosystem-topology-agnostic)
+  * [3.3 Expert systems and ecosystems must be observable at run time](technical-specification#33-expert-systems-and-ecosystems-must-be-observable-at-run-time)
+  * [3.4 API First](technical-specification#34-api-first)
+  * [3.5 Resource representations and content negotiation must be supported](technical-specification#35-resource-representations-and-content-negotiation-must-be-supported)
+  * [3.6 Entitlements and affordances must be discoverable](technical-specification#36-entitlements-and-affordances-must-be-discoverable)
+  * [3.7 Functional evolution of protocols and resource representations must be unsurprising](technical-specification#37-functional-evolution-of-protocols-and-resource-representations-must-be-unsurprising)
+  * [3.8 External Feed integration must be technology agnostic](technical-specification#38-external-feed-integration-must-be-technology-agnostic)
+* [4 Required responsibilities](technical-specification#4-required-responsibilities)
+  * [4.1 Exchange](technical-specification#41-exchange)
+  * [4.2 Administration](technical-specification#42-administration)
+  * [4.3 Refinery](technical-specification#43-refinery)
+  * [4.4 Event Store](technical-specification#44-event-store)
+  * [4.5 Registry](technical-specification#45-registry)
+  * [4.6 Ontology](technical-specification#46-ontology)
+* [5 Architecture Recommendations](technical-specification#5-architecture-recommendations)
+* [6. Potential extensions](technical-specification#6-potential-extensions)
+  * [6.1 Directory](technical-specification#61-directory)
+  * [6.2 Reasoning Engines](technical-specification#62-reasoning-engines)
+* [7. Separate Concerns](technical-specification#7-separate-concerns)
+* [8. External API](technical-specification#8-external-api)
+* [9. References](technical-specification#9-references)
 
 # 1 Introduction
 
 ## 1.1 Purpose of this document
 
-The Ecosystem Toolkit aims to make it easier for entities to collaborate by producing and/or consuming tokens of value that relate to real world 'things' of common interest.  The Toolkit is comprised of the **Technical Specification** and the [**Rules of Engagement**](Draft-RoE), which outline the technical and non-technical components respectively.  
+The Ecosystem Toolkit aims to make it easier for entities to collaborate by producing and/or consuming tokens of value that relate to real world 'things' of common interest.  The Toolkit is comprised of the **Technical Specification** and the [**Rules of Engagement**](rules-of-engagement), which outline the technical and non-technical components respectively.  
 
 This document is the Technical Specification: it specifies the technical considerations that must be deployed in order to implement an Expert System. An Expert System can be implemented by any entity that sees value in using that Expert System - for example: to collaborate with other entities also deploying Expert Systems.
 
@@ -53,29 +53,29 @@ Entities that use the Toolkit to collaborate are referred to as Ecosystem Partic
 
 ## 1.2 Conventions used in this document
 
-Much of our thinking is informed by [Systems Thinking](technical-specification-#systems-thinking). It is our belief that both code and configuration are static or even stagnant constructs. Our goal is to create a system that executes both dynamically _and_ is also highly resilient while doing so.
+Much of our thinking is informed by [Systems Thinking](technical-specification#systems-thinking). It is our belief that both code and configuration are static or even stagnant constructs. Our goal is to create a system that executes both dynamically _and_ is also highly resilient while doing so.
 
-This has led to us to take a particular exploration approach in our conversations, workshops and design sessions, and we have focused heavily on specifying the minimum set of "responsibilities" that need to be deployed to sustain such a system. We refer to a deployment of the these responsibilities as an [Expert System](technical-specification-#2-an-expert-system).
+This has led to us to take a particular exploration approach in our conversations, workshops and design sessions, and we have focused heavily on specifying the minimum set of "responsibilities" that need to be deployed to sustain such a system. We refer to a deployment of the these responsibilities as an [Expert System](technical-specification#2-an-expert-system).
 
-We use the [C4](technical-specification-#c4-architecture-visualisation) model to visualise architecture within this Technical Specification and limit visualisations to level 1 and level 2 (system context and container respectively), so as not to prejudice implementation choices by specifying individual components or code.
+We use the [C4](technical-specification#c4-architecture-visualisation) model to visualise architecture within this Technical Specification and limit visualisations to level 1 and level 2 (system context and container respectively), so as not to prejudice implementation choices by specifying individual components or code.
 
 ## 1.3 Structure of this document
 
-[Section 2](technical-specification-#2-an-expert-system) provides an overview of an Expert System and the minimum set of responsibilities that **must** be implemented to deploy an Expert System in compliance with this Technical Specification.
+[Section 2](technical-specification#2-an-expert-system) provides an overview of an Expert System and the minimum set of responsibilities that **must** be implemented to deploy an Expert System in compliance with this Technical Specification.
 
-[Section 3](technical-specification-#3-architecture-constraints) details the Architecture Constraints that **must** be factored into the deployment of these responsibilities. These constraints form part of the Technical Specification.
+[Section 3](technical-specification#3-architecture-constraints) details the Architecture Constraints that **must** be factored into the deployment of these responsibilities. These constraints form part of the Technical Specification.
 
-[Section 4](technical-specification-#4-required-responsibilities) details each responsibility in turn, describing the requirements that **must** be implemented. These requirements form part of the Technical Specification.
+[Section 4](technical-specification#4-required-responsibilities) details each responsibility in turn, describing the requirements that **must** be implemented. These requirements form part of the Technical Specification.
 
-[Section 5](technical-specification-#5-architecture-recommendations) sets out Architecture Recommendations and aims to educate on best practice implementation. These recommendations are **not** part of the Technical Specification
+[Section 5](technical-specification#5-architecture-recommendations) sets out Architecture Recommendations and aims to educate on best practice implementation. These recommendations are **not** part of the Technical Specification
 
-[Section 6](technical-specification-#6-potential-extensions) highlights two responsibilities that **do not** form part of this version of the Technical Specification, but which represent obvious potential extensions of it. These responsibilities are referred to as the Directory and Reasoning Engine.
+[Section 6](technical-specification#6-potential-extensions) highlights two responsibilities that **do not** form part of this version of the Technical Specification, but which represent obvious potential extensions of it. These responsibilities are referred to as the Directory and Reasoning Engine.
 
-[Section 7](technical-specification-#7-separate-concerns) lists other technical considerations that may be relevant to a given ecosystem / domain of interest / use case but which **do not** form part of the Technical Specification, and are therefore considered to be separate concerns.
+[Section 7](technical-specification#7-separate-concerns) lists other technical considerations that may be relevant to a given ecosystem / domain of interest / use case but which **do not** form part of the Technical Specification, and are therefore considered to be separate concerns.
 
-[Section 8](technical-specification-#8-example-api) contains sample code for example API requests using [Extensible Data Notation](technical-specification-#extensible-data-notation). This code was developed to further illustrate our thinking, and is not part of the Technical Specification.
+[Section 8](technical-specification#8-example-api) contains sample code for example API requests using [Extensible Data Notation](technical-specification#extensible-data-notation). This code was developed to further illustrate our thinking, and is not part of the Technical Specification.
 
-[Section 9](technical-specification-#9-references) provides some more detail and further links on Systems Thinking, C4 and Extensible Data Notation, as referenced within this Technical Specification.
+[Section 9](technical-specification#9-references) provides some more detail and further links on Systems Thinking, C4 and Extensible Data Notation, as referenced within this Technical Specification.
 
 A separate [Glossary of Terms](Glossary-of-terms) provides a common language across the Ecosystem Toolkit artefacts including this Technical Specification.
 
@@ -110,7 +110,7 @@ The Technical Specification specifies that an Expert System **must** deploy the 
 * **[Registry](technical-specification-#45-registry):** a registry of all the 'things' that have been declared (i.e. nodes), including the Participants that form part of an Ecosystem and their entitlements
 * **[Ontology](technical-specification-#46-ontology):** a conceptual model of the domain of interest shared by the Participants of an Ecosystem, expressed in a machine-readable logic-based language
 
-These responsibilities may be implemented to varying levels depending on the requirements of any given Owning Entity and/or Ecosystem.  With the exception of [Architecture Constraints](technical-specification-#3-architecture-constraints), implementation details and architectural style are not part of this Technical Specification.
+These responsibilities may be implemented to varying levels depending on the requirements of any given Owning Entity and/or Ecosystem.  With the exception of [Architecture Constraints](technical-specification#3-architecture-constraints), implementation details and architectural style are not part of this Technical Specification.
 
 ## 2.2 Interoperability between Expert Systems
 
@@ -233,7 +233,7 @@ Initially, the Expert System **must** afford an entity the ability to write Core
 
 The Expert System is provisioned to a minimum level necessary when the Events that it stores have configured it as an Agent for a known Owning Entity.  Provisioning is an iterative process and may involve evolving the Core Ontology itself via data driven interactions with the Administrative responsibilities.
 
-Once provisioned, the Owning Entity writes information into the Expert System, to be transformed into Events by the [Refinery](technical-specification-#43-Refinery) and stored in the [Event Store](technical-specification-#44-event-store).
+Once provisioned, the Owning Entity writes information into the Expert System, to be transformed into Events by the [Refinery](technical-specification#43-Refinery) and stored in the [Event Store](technical-specification#44-event-store).
 
 ### 4.2.2 Configuration of Owning Entity entitlements
 
@@ -277,7 +277,7 @@ The Filter to instantiate an Ecosystem includes Core Ontology Events that are us
 * Associate the identifiers of each entity with authentication, authorisation and provenance mechanisms
 * Associate the identifiers of each Expert System with its URL
 
-The use of these terms from the Core Ontology allows the Owning Entity to instantiate an Ecosystem, by identifying and qualifying the members of that Ecosystem. The details of each entity are recorded in the [Registry](technical-specification-#45-registry).
+The use of these terms from the Core Ontology allows the Owning Entity to instantiate an Ecosystem, by identifying and qualifying the members of that Ecosystem. The details of each entity are recorded in the [Registry](technical-specification#45-registry).
 
 The Owning Entity configures the scope of action afforded to each Participant by defining Scopes that relate to the shared domain of interest, and associating these Scopes with the resource representing each Participant. Initially, the default scope of action afforded to each Participant is zero (i.e. they can do nothing until given the entitlement to do something by the Owning Entity).
 
@@ -308,7 +308,7 @@ The Owning Entity interacts with the Expert System to configure the entitlements
 
 Events are written to a location that is dependant on the topology and configuration of a given set of collaborating Expert Systems. The contextual needs of a participating set of entities and the potential sensitivity of the expertise and signals they wish to share will shape topology and configuration concerns.
 
-The Expert System **must** ensure that only the Event Producer and Rights Owners of an Event (see [Refinery](technical-specification-#43-Refinery) below) is able to grant or remove the permissions of other Participants to read or retract that Event.
+The Expert System **must** ensure that only the Event Producer and Rights Owners of an Event (see [Refinery](technical-specification#43-Refinery) below) is able to grant or remove the permissions of other Participants to read or retract that Event.
 
 The Expert System **must** ensure that only its Owning Entity is able to grant or remove the permissions of other Participants to write an Event using that Expert System.
 
@@ -370,7 +370,7 @@ As a default, the Refinery **must** set the owner of the External Feed as the Ev
 
 If the Event Producer and Rights Owners are different, the External Feed **must** identify them as entities that have previously been declared to the Registry.
 
-See [API example](technical-specification-#8-API-example).
+See [API example](technical-specification#8-API-example).
 
 ## 4.4 Event store
 
@@ -399,7 +399,7 @@ When an entity is classified as a Owning Entity, Event Producer or Rights Owner 
 * A unique human readable name, so that it can uniquely be referenced by a human
 * A set of contact points (such as an email address or telephone number), so that it can be addressed by a human
 
-As noted below, the identification of the entities that control the identifiers is considered as a [separate concern](technical-specification-#7-separate-concerns). The responsibility for discovery and identification of Participants does not fall within this Technical Specification.
+As noted below, the identification of the entities that control the identifiers is considered as a [separate concern](technical-specification#7-separate-concerns). The responsibility for discovery and identification of Participants does not fall within this Technical Specification.
 
 A given Ecosystem **may** choose to specify an identification requirement under the governance framework to which they submit, where that governance framework goes beyond the [Rules of Engagement](rules-of-engagement).
 
@@ -411,7 +411,7 @@ Albeit clumsy, the default approach to de-referencing is therefore to ask the en
 
 A given Ecosystem **may** choose to specify the ability to resolve the identity of 'things' as a requirement, so that the knowledge base over which they collaborate can _always_ be resolved and de-referenced to information held _outside_ of the ecosystem.
 
-See [API Example](technical-specification-#8-api-example).
+See [API Example](technical-specification#8-api-example).
 
 ## 4.6 Ontology
 
@@ -450,7 +450,7 @@ We recommend that the Exchange presents a base set of integrations with existing
 
 ## 6.1 Directory
 
-The discovery, identity proofing and certification of entities that have deployed an Expert System are [separate concerns](technical-specification-#7-separate-concerns) that do not form part of this Technical Specification.
+The discovery, identity proofing and certification of entities that have deployed an Expert System are [separate concerns](technical-specification#7-separate-concerns) that do not form part of this Technical Specification.
 
 It is conceivable, however, that such functionality could be delivered in a fully machine-readable way by an Expert System, as part of a Directory responsibility.
 
@@ -469,8 +469,8 @@ There are several technical considerations that may be relevant to a given ecosy
 * Proving claims to identity
 * Proving claims to entitlements
 * Certifying deployment of this Technical Specification
-* Reasoning engines (see [Potential Extensions](technical-specification-#6-potential-extensions))
-* Discovery mechanisms (see [Potential Extensions](technical-specification-#6-potential-extensions))
+* Reasoning engines (see [Potential Extensions](technical-specification#6-potential-extensions))
+* Discovery mechanisms (see [Potential Extensions](technical-specification#6-potential-extensions))
 * Contracting mechanisms
 * Value exchange mechanisms
 * Issue resolution mechanisms
