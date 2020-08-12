@@ -229,7 +229,7 @@ Initially, the Expert System **must** afford an entity the ability to write Core
 
 * Declare their own existence and name themselves with a human readable label
 * Claim the role of Owning Entity to the Expert System
-* Give the URL of the Expert System's Exchange (and therefore the Expert System) a human readable label or accept an auto-generated one
+* Give the URI of the Expert System's Exchange (and therefore the Expert System) a human readable label or accept an auto-generated one
 
 The Expert System is provisioned to a minimum level necessary when the Events that it stores have configured it as an Agent for a known Owning Entity.  Provisioning is an iterative process and may involve evolving the Core Ontology itself via data driven interactions with the Administrative responsibilities.
 
@@ -275,7 +275,7 @@ The Filter to instantiate an Ecosystem includes Core Ontology Events that are us
 * Classify these entities according to their role (e.g. Expert System, Participant, External Feed)
 * Label these entities with human readable names
 * Associate the identifiers of each entity with authentication, authorisation and provenance mechanisms
-* Associate the identifiers of each Expert System with its URL
+* Associate the identifiers of each Expert System with its URI
 
 The use of these terms from the Core Ontology allows the Owning Entity to instantiate an Ecosystem, by identifying and qualifying the members of that Ecosystem. The details of each entity are recorded in the [Registry](technical-specification#45-registry).
 
@@ -386,7 +386,7 @@ The Registry enforces compliance to this Technical Specification for the subset 
 
 When an entity is classified as an Expert System, its identifier **must** be associated with:
 * Credentials, so that it can be authenticated
-* A URL, so that it can be uniquely addressed by other machines (i.e. the Exchange)
+* A URI, so that it can be uniquely addressed by other machines (i.e. the Exchange)
 * A unique human readable name, so that it can be uniquely and usefully referenced by a human
 * An Owning Entity, so that the legal entity on whose behalf it acts is knowable
 
@@ -407,7 +407,7 @@ When an Event Producer declares the existence of _any_ 'thing', it creates a nod
 
 The default mechanism will be the contact points associated with the Event Producer (or Owning Entity). Every Event includes the identity of the entity that generated the assertion being made in the role of the Event Producer. The Registry enforces compliance with the requirement to associate entities in the role of Event Producer with contact points.
 
-Albeit clumsy, the default approach to de-referencing is therefore to ask the entity that created the node. However, it is **best practice** for the Event Producer to associate another identifier with the node identifier. This additional identifier uniquely identifies the node within the architecture of the Event Producer / External Feed. Alternatively, Event Producers may associate the node identifier with a URL that can be resolved and de-referenced directly.
+Albeit clumsy, the default approach to de-referencing is therefore to ask the entity that created the node. However, it is **best practice** for the Event Producer to associate another identifier with the node identifier. This additional identifier uniquely identifies the node within the architecture of the Event Producer / External Feed. Alternatively, Event Producers may associate the node identifier with a URI that can be resolved and de-referenced directly.
 
 A given Ecosystem **may** choose to specify the ability to resolve the identity of 'things' as a requirement, so that the knowledge base over which they collaborate can _always_ be resolved and de-referenced to information held _outside_ of the ecosystem.
 
