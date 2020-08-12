@@ -103,12 +103,12 @@ At times the term "Signal" may be used interchangeably with Event. A Signal repr
 
 The Technical Specification specifies that an Expert System **must** deploy the following responsibilities:
 
-* **[Exchange](technical-specification-#41-exchange):** the gateway that connects the Expert System to the outside world (including other Expert Systems), and through which the Owning Entity configures and instructs the Expert System
-* **[Administration](technical-specification-#42-administration):** the instruction set used to provision the Expert System, configure the Owning Entity's entitlements, instantiate an Ecosystem and specify a knowledge base
-* **[Refinery](technical-specification-#43-refinery):** the transformation of information (including Administration instructions) into a machine-readable representation in the form of an Event
-* **[Event Store](technical-specification-#44-event-store):** the persistent storage of Events written to the Expert System
-* **[Registry](technical-specification-#45-registry):** a registry of all the 'things' that have been declared (i.e. nodes), including the Participants that form part of an Ecosystem and their entitlements
-* **[Ontology](technical-specification-#46-ontology):** a conceptual model of the domain of interest shared by the Participants of an Ecosystem, expressed in a machine-readable logic-based language
+* **[Exchange](technical-specification#41-exchange):** the gateway that connects the Expert System to the outside world (including other Expert Systems), and through which the Owning Entity configures and instructs the Expert System
+* **[Administration](technical-specification#42-administration):** the instruction set used to provision the Expert System, configure the Owning Entity's entitlements, instantiate an Ecosystem and specify a knowledge base
+* **[Refinery](technical-specification#43-refinery):** the transformation of information (including Administration instructions) into a machine-readable representation in the form of an Event
+* **[Event Store](technical-specification#44-event-store):** the persistent storage of Events written to the Expert System
+* **[Registry](technical-specification#45-registry):** a registry of all the 'things' that have been declared (i.e. nodes), including the Participants that form part of an Ecosystem and their entitlements
+* **[Ontology](technical-specification#46-ontology):** a conceptual model of the domain of interest shared by the Participants of an Ecosystem, expressed in a machine-readable logic-based language
 
 These responsibilities may be implemented to varying levels depending on the requirements of any given Owning Entity and/or Ecosystem.  With the exception of [Architecture Constraints](technical-specification#3-architecture-constraints), implementation details and architectural style are not part of this Technical Specification.
 
