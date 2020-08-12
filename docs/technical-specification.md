@@ -73,7 +73,7 @@ We use the [C4](technical-specification#c4-architecture-visualisation) model to 
 
 [Section 7](technical-specification#7-separate-concerns) lists other technical considerations that may be relevant to a given ecosystem / domain of interest / use case but which **do not** form part of the Technical Specification, and are therefore considered to be separate concerns.
 
-[Section 8](technical-specification#8-example-api) contains sample code for example API requests using [Extensible Data Notation](technical-specification#extensible-data-notation). This code was developed to further illustrate our thinking, and is not part of the Technical Specification.
+[Section 8](technical-specification#8-external-api) specifies the external API Owning Entities use to provision and administer their Expert Systems. Also used by other participants or third party systems to interact with the Owning Entity's Expert System.
 
 [Section 9](technical-specification#9-references) provides some more detail and further links on Systems Thinking, C4 and Extensible Data Notation, as referenced within this Technical Specification.
 
