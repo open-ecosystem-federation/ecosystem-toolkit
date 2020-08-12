@@ -14,7 +14,7 @@ Our branching strategy follows : https://nvie.com/posts/a-successful-git-branchi
 
 We use a 'main' branch in place of the 'master' branch.
 
-We re-use feature branches to incorporate feedback, suggestions and evolve our toolkit and to review these sorts of changes.
+We re-use feature branches to incorporate feedback, suggestions and evolve our toolkit and review these sorts of changes via pull requests.
 
 We incorporate github project issue numbers in our feature branch names where there are associated issues e.g. '42-my-feature'.
 
