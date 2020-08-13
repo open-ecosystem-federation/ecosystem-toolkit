@@ -158,7 +158,7 @@ Both forms and links **must** be supported, these are elements of a RESTful flav
 
 ## 3.5 Resource representations and content negotiation must be supported
 
-Every protocol designed to last on the order of decades and keep pace with the evolution of IT supports negotiation, and a flexible way to represent information resources.
+Every protocol designed to last on the order of decades and keep pace with the evolution of IT supports negotiation, and a flexible and extensible way to represent information resources.
 
 A combination of resource representations and content negotiation ensure Ecosystems will permit a lowering of the barrier to entry for potential Participants, while at the same time enabling specialised bilateral collaborations.
 
