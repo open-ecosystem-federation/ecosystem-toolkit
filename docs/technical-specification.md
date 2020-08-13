@@ -168,7 +168,7 @@ Ecosystems may offer differing resource states or quality of service depending o
 
 ## 3.6 Entitlements and affordances must be discoverable
 
-In any Ecosystem, different types of Participants **may** interact with each other indistinguishably for some types of transaction. Consuming Participants **must** only be presented with entitlements and affordances they are permitted to act upon.
+In any Ecosystem, different types of Participants **may** interact with each other indistinguishably for some types of transaction. Consuming Participants **must** understand how they may interact with an Expert System and **must** only be presented with entitlements and affordances they are permitted to act upon.
 
 Since Expert Systems **must** be self-describing, there **must not** be any need for out of band API documentation or other such forms of collateral.
 
