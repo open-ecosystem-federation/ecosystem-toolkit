@@ -144,7 +144,15 @@ An Expert System may operate independently, with access only afforded to its Own
 
 ## 3.3 Expert systems and ecosystems must be observable at run time
 
-In order to measure performance and establish and adjust the kinds of feedback loop that are essential in permitting resilience, we **must** be able to observe running systems. A combination of runtime observability and feedback loops moves us towards anti-fragility as a design goal.
+In order to measure performance and establish and adjust the kinds of feedback loop that are essential in permitting resilience which in turn helps a system to live long enough to evolve, we **must** be able to observe running systems. A combination of runtime observability and feedback loops moves us towards anti-fragility as a design goal.
+
+Within a system whose primary purpose is to join expertise across a network of collaborating participants the primary facet of observability we **must** concern ourselves with is metrics on the routing of signals. Given that the options for Expert System signal routing are flexible and configurable there is an element of complexity present, the ability to trace signals is therefore important. It **must** be possible to determine if signals are being delivered successfully.
+
+Routing metrics **may** also provide useful information on reciprocation - a healthy ecosystem demonstrates a balance of contribution versus consumption.
+
+Metrics detailing the types of interaction participating entities (Owning Entities and other Expert Systems) are transacting over **must** be available. This permits the observer to understand the value of contributed signals. If accretion is observable over a signal or there is evidence of an association with other signals for corroboration the observer is somewhat informed as how valuable individual signals are.
+
+This Technical Specification provisions for the design of Expert Systems which may operate as configurable collaborating building blocks for a large set of disparate ecosystems. The [Rules of Engagement](rules-of-engagement) artefact specifies a governance framework which comprises of several components or dimensions which compose to define how participants will collaborate. Expert Systems record governance framework component values at a transactional level. The value to which these components may be set is configurable over a spectrum of possible values in some cases. In order to optimise these values to ensure healthy and useful collaboration can be the status quo in a given ecosystem the observer **must** be able to observe at least the metrics outlined in this section.
 
 ## 3.4 API First
 
