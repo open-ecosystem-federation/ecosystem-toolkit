@@ -370,7 +370,6 @@ As a default, the Refinery **must** set the owner of the External Feed as the Ev
 
 If the Event Producer and Rights Owners are different, the External Feed **must** identify them as entities that have previously been declared to the Registry.
 
-See [API example](technical-specification#8-API-example).
 
 ## 4.4 Event store
 
@@ -411,7 +410,6 @@ Albeit clumsy, the default approach to de-referencing is therefore to ask the en
 
 A given Ecosystem **may** choose to specify the ability to resolve the identity of 'things' as a requirement, so that the knowledge base over which they collaborate can _always_ be resolved and de-referenced to information held _outside_ of the ecosystem.
 
-See [API Example](technical-specification#8-api-example).
 
 ## 4.6 Ontology
 
