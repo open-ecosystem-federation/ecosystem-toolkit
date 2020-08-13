@@ -411,7 +411,6 @@ Albeit clumsy, the default approach to de-referencing is therefore to ask the en
 
 A given Ecosystem **may** choose to specify the ability to resolve the identity of 'things' as a requirement, so that the knowledge base over which they collaborate can _always_ be resolved and de-referenced to information held _outside_ of the ecosystem.
 
-See [API Example](technical-specification#8-api-example).
 
 ## 4.6 Ontology
 
