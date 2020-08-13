@@ -370,7 +370,6 @@ As a default, the Refinery **must** set the owner of the External Feed as the Ev
 
 If the Event Producer and Rights Owners are different, the External Feed **must** identify them as entities that have previously been declared to the Registry.
 
-See [API example](technical-specification#8-API-example).
 
 ## 4.4 Event store
 
