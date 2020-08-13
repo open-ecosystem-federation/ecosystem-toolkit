@@ -185,7 +185,7 @@ The following prime directives **must** be obeyed when functionally evolving Exp
 * accept what was accepted before
 * yield unsurprising responses
 
-Functional evolution in this instance means all evolution that is within our control for example the addition of new features . Legislative change or security upgrades are examples of concerns which may place the evolution of an Expert System out of our control.
+Functional evolution in this instance means all evolution that is within our control for example the addition of new features. Legislative change or security upgrades are examples of concerns which may place the evolution of an Expert System out of our control.
 
 ## 3.8 External Feed integration must be technology agnostic
 
