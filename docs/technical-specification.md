@@ -18,7 +18,7 @@
   * [3.4 API First](technical-specification#34-api-first)
   * [3.5 Resource representations and content negotiation must be supported](technical-specification#35-resource-representations-and-content-negotiation-must-be-supported)
   * [3.6 Entitlements and affordances must be discoverable](technical-specification#36-entitlements-and-affordances-must-be-discoverable)
-  * [3.7 Functional evolution of protocols and resource representations must be unsurprising](technical-specification#37-functional-evolution-of-protocols-and-resource-representations-must-be-unsurprising)
+  * [3.7 Expert System functional evolution must be safe and unsurprising](technical-specification#37-expert-system-functional-evolution-must-be-safe-and-unsurprising)
   * [3.8 External Feed integration must be technology agnostic](technical-specification#38-external-feed-integration-must-be-technology-agnostic)
 * [4 Required responsibilities](technical-specification#4-required-responsibilities)
   * [4.1 Exchange](technical-specification#41-exchange)
@@ -172,20 +172,20 @@ In any Ecosystem, different types of Participants **may** interact with each oth
 
 Since Expert Systems **must** be self-describing, there **must not** be any need for out of band API documentation or other such forms of collateral.
 
-## 3.7 Functional evolution of protocols and resource representations must be unsurprising
+## 3.7 Expert System functional evolution must be safe and unsurprising
 
 Over time, many different Ecosystems will be instantiated. Within these, many Expert Systems will be collaborating, and around them many organisations will build client software to interact with the Expert Systems for a multitude of reasons.
 
-Expert Systems will inevitably implement a functional evolution of their protocols and resource representations. Whenever functional evolution is implemented, an Expert System **must not** break the software clients and Expert Systems that interact with it.
+Expert Systems will inevitably evolve functionally in terms of their protocols and resource representations. Whenever functional evolution is implemented, an Expert System **must not** break the software clients and Expert Systems that interact with it.
 
-The following prime directives **must** be obeyed for a functionally evolving Expert Systems:
+The following prime directives **must** be obeyed when functionally evolving Expert Systems:
 
 * do not use versions
 * require nothing new
 * accept what was accepted before
 * yield unsurprising responses
 
-Functional evolution in this instance means all evolution that is within our control. Legislative change or security upgrades may be out of our control.
+Functional evolution in this instance means all evolution that is within our control for example the addition of new features . Legislative change or security upgrades are examples of concerns which may place the eovlution of an Expert System out of our control.
 
 ## 3.8 External Feed integration must be technology agnostic
 
