@@ -1,3 +1,3 @@
 title: Ecosystem Toolkit
 description: The Open Ecosystem Federation Ecosystem Toolkit
-remote_theme: pmarsceill/just-the-docs
+theme: jekyll-theme-slate
