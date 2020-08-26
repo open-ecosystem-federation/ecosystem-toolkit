@@ -247,7 +247,7 @@ Once provisioned, the Owning Entity writes information into the Expert System, t
 
 Once the Expert System has been provisioned, it **must** permit the Owning Entity to write the Core Ontology Events that configure entitlements by specifying a permitted scope of action, based on:
 
-* Filters which defines a possible set of Core Ontology Events (similar to a view or query)
+* Filters which define a possible set of Core Ontology Events (similar to a view or query)
 * Conditions that can be evaluated as true or false (i.e. a Boolean)
 * Scopes comprised of both a Filter and Condition
 
