@@ -264,7 +264,7 @@ The Condition associated with each of these Scopes **must** simply be an asserti
 
 Best practice is for the Exchange to present the Owning Entity with each Filter in turn, prompting the Owning Entity to fulfil the Condition that permits them to access the associated functionality. This default setting ensures that the Owning Entity actively 'discovers' functionality (in the form of Scopes) incrementally and that there is an explicit record of the Owning Entity permitting themselves a defined scope of action.
 
-#### 4.2.2.1 Owning Entity access to Expert System functionality
+#### 4.2.2.1 Access to Expert System functionality
 
 The only functionality that is afforded to the Owning Entity is the ability to write Events. However, until they have permitted themselves to do so, the Owning Entity is not afforded the ability to write Action Terms that trigger Expert System functionality.
 
@@ -275,7 +275,7 @@ The Filter that gives the Owning Entity access to Expert System functionality is
 
 This base functionality is the minimum set required to support collaboration within an Ecosystem. Additional functionality can be added to an Expert System by extending the Action Terms within the Core Ontology, where each Action Term is associated with a defined Administration Protocol.
 
-#### 4.2.2.2 Instantiation of an Ecosystem
+#### 4.2.2.2 Instantiate an Ecosystem
 
 The Filter to instantiate an Ecosystem includes Core Ontology Events that are used to provision the Expert System. These terms allow the Owning Entity to:
 
@@ -291,7 +291,7 @@ The Owning Entity configures the scope of action afforded to each Participant by
 
 Every Scope that configures the entitlements of a given Participant **must** be associated with the governance framework under which the scope of action is being afforded. The default governance framework **must** comply with [Rules of Engagement](rules-of-engagement).
 
-#### 4.2.2.3 Creation of a knowledge base
+#### 4.2.2.3 Create a knowledge base
 
 The Filter that is used to create a knowledge base includes Core Ontology Events that allow the Owning Entity to create an ontology that is relevant for their domain(s) of interest.
 
