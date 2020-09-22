@@ -6,7 +6,7 @@ Our material is published via Github Pages : https://open-ecosystem-federation.g
 
 ## Ways of working
 
-### Version control and branching strategy
+### Version control, branching strategy and releases
 
 We use Github.
 
@@ -17,6 +17,8 @@ We use a 'main' branch in place of the 'master' branch.
 We re-use feature branches to incorporate feedback, suggestions and evolve our toolkit and review these sorts of changes via pull requests.
 
 We incorporate github project issue numbers in our feature branch names where there are associated issues e.g. '42-my-feature'.
+
+We use [Chronver](https://chronver.org) for our tag/release versioning, for anything else just use the git commit :-)
 
 ### OEF core member contributors
 
