@@ -10,7 +10,7 @@ Our material is published via Github Pages : https://open-ecosystem-federation.g
 
 We use Github.
 
-Our branching strategy follows : https://nvie.com/posts/a-successful-git-branching-model/
+We use [A Successful Branching Model](https://nvie.com/posts/a-successful-git-branching-model/) for our branching strategy.
 
 We use a 'main' branch in place of the 'master' branch.
 
