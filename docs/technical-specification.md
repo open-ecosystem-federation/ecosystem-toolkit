@@ -330,7 +330,7 @@ Information **must** be conveyed _between_ Participants using immutable assertio
 
 An Expert System **must** contain the capability to refine 'raw' information into Events. This capability ensures that the barrier to contributing information into an Expert System is as low as possible.
 
-The standardised structure **must** be applied to information _at an atomic level_. This ensures that the barrier to interoperability between Expert Systems is as low as possible
+The standardised structure **must** be applied to information _at an atomic level_. This ensures that the barrier to interoperability between Expert Systems is as low as possible.
 
 The provenance of an Event **must** be integrated into its structure. This ensures that every Event (and therefore the assertion which it contains) is trustable, governable and auditable.
 
