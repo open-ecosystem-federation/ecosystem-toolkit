@@ -364,7 +364,7 @@ The Metadata Assertions element of an Event **must** contain one of:
 * **Event Producer**: the identifier of the entity that generated the assertion being made (if we are receiving a feed from a party who own the information their expertise is being deployed over, and the outputs of their expertise)
 * **Event Provider**: where the feed is relaying events from a party who do not own the information or outputs
 
-If an there is a more permanent and automated flow of events may be described as a feed in which case an Event **may** contain:
+If a more permanent and automated flow of events (which may be described as a feed) is in place an Event **may** contain:
 * **External Feed**: the identifier of the feed used to input the assertion into the Expert System
 
 Finally to complete the provenance picture an Event **may** include:
