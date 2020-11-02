@@ -332,41 +332,43 @@ An Expert System **must** contain the capability to refine 'raw' information int
 
 The standardised structure **must** be applied to information _at an atomic level_. This ensures that the barrier to interoperability between Expert Systems is as low as possible.
 
-The provenance of an Event **must** be integrated into its structure. This ensures that every Event (and therefore the assertion which it contains) is trustable, governable and auditable.
+The provenance of an Event **must** be integrated into its structure. This ensures that every Event (and therefore the assertion(s) which it contains) is trustable, governable and auditable.
 
-An Event **must** be structured as an assertion:
+This Technical Specification does not prescribe how an event is structured for transport or for storage.
 
-* **Body**: the content of the assertion (i.e. what is being asserted)
-* **Header**: the provenance of the assertion (e.g. who is asserting / how are they asserting / when are they asserting)
+An Event **must** be structured to include:
 
-### 4.3.1 Body
+* **Domain Assertions**: a set of assertions (i.e. what is being asserted within a given domain)
+* **Metadata Assertions**: a set of provenance assertions associated with the Domain Assertions (e.g. who is asserting / how are they asserting / when are they asserting)
 
-The body of an Event **must** comprise of at least one three tuple or _triple_:
+### 4.3.1 Domain Assertions
 
-* **Subject**: the 'thing' that the assertion is about
+The Domain Assertions element of an Event **must** comprise of at least one n-tuple (minimum of _triple_):
+
+* **Subject**: the 'thing' that the assertion(s) are about
 * **Predicate**: the property of the subject that is being asserted
 * **Object**: the property value (or related 'things') being asserted
 
-The assertion expressed by an Event is the collection of one or more triples, where the meaning of those triples can be entirely arbitrary or nonsensical.
+The assertion(s) expressed by an Event are the collection of one or more n-tuples, where the meaning of those n-tuples can be entirely arbitrary or nonsensical.
 
-A collection of Events can be thought of as a graph, where 'things' are represented by nodes and the relationship between those nodes and the properties associated with those nodes are represented by vertices.
+### 4.3.2 Metdata Assertions
 
-### 4.3.2 Header
+Metadata Assertions provide information about the basis on which an Event enters into an Ecosystem, describing key aspects of its provenance which govern its treatment within the Ecosystem.
 
-The header of an Event **must** contain the following elements:
+The Metadata Assertions element of an Event **must** contain the following elements:
 
-* **Identification mechanism** (e.g. UID, DID or other): the way to identify one Event from all others
+* **Identification mechanism** (e.g. UID, DID or other): the way to uniquely identify an Event
 * **Timestamp**: the time/date at which the assertion contained in the Event entered into the Expert System (i.e. was 'refined')
-* **Event Producer**: the identifier of the entity that generated the assertion being made
 
-The Event header provides information about the basis on which an Event enters into an Ecosystem, describing key aspects of its provenance which govern its treatment within the Ecosystem.
+The Metadata Assertions element of an Event **must** contain one of:
+* **Event Producer**: the identifier of the entity that generated the assertion being made (if we are receiving a feed from a party who own the information their expertise is being deployed over, and the outputs of their expertise)
+* **Event Provider**: where the feed is relaying events from a party who do not own the information or outputs
 
-[**Optional - best practice to add in where appropriate, context specific.**]
-* **External Feed**: the identifier of the external source used to input the assertion into the Expert System
+If an there is a more permanent and automated flow of events may be described as a feed in which case an Event **may** contain:
+* **External Feed**: the identifier of the feed used to input the assertion into the Expert System
+
+Finally to complete the provenance picture an Event **may** include:
 * **Rights Owners**: the identifier of any legal entity or entities (other than the Event Producer) that exercise rights over access to the assertion
-
-[**Implicit - only needs to be explicit when Events are shared with another Expert System**]
-* **Event Provider**: the Expert System managing access to the Event on behalf of the Event Producer (and other Rights Owners) within the Ecosystem
 
 ### 4.3.3 External Feed requirements
 
