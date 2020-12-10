@@ -338,12 +338,12 @@ This Technical Specification does not prescribe how an event is structured for t
 
 An Event **must** be structured to include:
 
-* **Domain Assertions**: a set of assertions (i.e. what is being asserted within a given domain)
-* **Metadata Assertions**: a set of provenance assertions associated with the Domain Assertions (e.g. who is asserting / how are they asserting / when are they asserting)
+* **Data Assertions**: a set of assertions (i.e. what is being asserted within a given domain)
+* **Metadata Assertions**: a set of provenance assertions associated with the Data Assertions (e.g. who is asserting / how are they asserting / when are they asserting)
 
-### 4.3.1 Domain Assertions
+### 4.3.1 Data Assertions
 
-The Domain Assertions element of an Event **must** comprise of at least one n-tuple (minimum of _triple_):
+The Data Assertions element of an Event **must** comprise of at least one n-tuple (minimum of _triple_):
 
 * **Subject**: the 'thing' that the assertion(s) are about
 * **Predicate**: the property of the subject that is being asserted
