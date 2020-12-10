@@ -351,7 +351,7 @@ The Data Assertions element of an Event **must** comprise of at least one n-tupl
 
 The assertion(s) expressed by an Event are the collection of one or more n-tuples, where the meaning of those n-tuples can be entirely arbitrary or nonsensical.
 
-### 4.3.2 Metdata Assertions
+### 4.3.2 Metadata Assertions
 
 Metadata Assertions provide information about the basis on which an Event enters into an Ecosystem, describing key aspects of its provenance which govern its treatment within the Ecosystem.
 
