@@ -30,3 +30,5 @@ Please reach out with features, suggestions or feedback in one of the following 
 ### Other interested parties
 
 We are figuring this out - coming soon.
+
+In the meantime join in over at [Discussions](https://github.com/open-ecosystem-federation/ecosystem-toolkit/discussions).
