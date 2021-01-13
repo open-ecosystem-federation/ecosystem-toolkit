@@ -6,6 +6,7 @@ The OEF is creating an open, scalable, extensible and repeatable Ecosystem Toolk
 
 * [Technical Specification](technical-specification.md) A Technical Specification based on open standards
 * [Rules of Engagement](rules-of-engagement.md) A default governance framework
+* [Glossary of Terms](glossary-of-terms.md) A Common Language for the Open Ecosystem Federation
 
 Parties use their implementation of the Technical Specification to declare both the signals that they control and the basis on which they will share them with other OEF compliant implementations.
 
